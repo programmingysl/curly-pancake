@@ -11,6 +11,8 @@ import { HomeComponent } from './views/home/home.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { CounterComponent } from './views/counter/counter.component';
 import { AsteriskPipe } from './controllers/asterisk.pipe';
+import { RandomjokeComponent } from './views/randomjoke/randomjoke.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { AsteriskPipe } from './controllers/asterisk.pipe';
     HomeComponent,
     NotFoundComponent,
     CounterComponent,
-    AsteriskPipe
+    AsteriskPipe,
+    RandomjokeComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { AsteriskPipe } from './controllers/asterisk.pipe';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
